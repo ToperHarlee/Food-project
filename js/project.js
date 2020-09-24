@@ -1042,6 +1042,11 @@
 // });
 
 // ************************************************** 073 Собираем наш проект и фиксим баги ****************************************************
+//*************************************************** 076 Как превратить код ES6+ в старый формат ES5. Babel, Core.js и полифиллы **************
+
+require('es6-promise').polyfill();
+import 'nodelist-foreach-polyfill';
+
 import  tabs  from'./modules/tabs';
 import modal, {methodOpen , metHodClose}  from './modules/modal';
 import  timer  from'./modules/timer';
